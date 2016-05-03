@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ink_line_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tb_Usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Nombres" Type="varchar(max)" />
+    <Property Name="Apellidos" Type="varchar(max)" />
+    <Property Name="Email" Type="varchar(max)" />
+    <Property Name="NombreUsuario" Type="varchar(max)" />
+    <Property Name="Contrasena" Type="varchar(max)" />
+    <Property Name="telefono" Type="varchar" MaxLength="15" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="Creado" Type="datetime" />
+    <Property Name="Modificado" Type="datetime" />
+    <Property Name="UsuarioCreado" Type="uniqueidentifier" />
+    <Property Name="UsuarioModificado" Type="uniqueidentifier" />
+    <Property Name="Disponible" Type="bit" />
+    <Property Name="IdFacebook" Type="varchar(max)" />
+    <Property Name="IdTwitter" Type="varchar(max)" />
+    <Property Name="IdGooglePlus" Type="varchar(max)" />
+    <Property Name="FK_Rol" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityContainer Name="Ink_line_DBModelStoreContainer">
+    <EntitySet Name="Tb_Usuarios" EntityType="Self.Tb_Usuarios" Schema="Seguridad" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

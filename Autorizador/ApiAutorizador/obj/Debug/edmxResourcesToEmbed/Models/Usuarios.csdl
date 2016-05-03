@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ink_line_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tb_Usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Guid" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Edad" Type="Int32" />
+    <Property Name="Creado" Type="DateTime" Precision="3" />
+    <Property Name="Modificado" Type="DateTime" Precision="3" />
+    <Property Name="UsuarioCreado" Type="Guid" />
+    <Property Name="UsuarioModificado" Type="Guid" />
+    <Property Name="Disponible" Type="Boolean" />
+    <Property Name="IdFacebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IdTwitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IdGooglePlus" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FK_Rol" Type="Guid" />
+  </EntityType>
+  <EntityContainer Name="Ink_line_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tb_Usuarios" EntityType="Self.Tb_Usuarios" />
+  </EntityContainer>
+</Schema>

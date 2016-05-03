@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ink_line_DBModelStoreContainer" CdmEntityContainer="Ink_line_DBEntities">
+    <EntitySetMapping Name="Tb_Usuarios">
+      <EntityTypeMapping TypeName="Ink_line_DBModel.Tb_Usuarios">
+        <MappingFragment StoreEntitySet="Tb_Usuarios">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Creado" ColumnName="Creado" />
+          <ScalarProperty Name="Modificado" ColumnName="Modificado" />
+          <ScalarProperty Name="UsuarioCreado" ColumnName="UsuarioCreado" />
+          <ScalarProperty Name="UsuarioModificado" ColumnName="UsuarioModificado" />
+          <ScalarProperty Name="Disponible" ColumnName="Disponible" />
+          <ScalarProperty Name="IdFacebook" ColumnName="IdFacebook" />
+          <ScalarProperty Name="IdTwitter" ColumnName="IdTwitter" />
+          <ScalarProperty Name="IdGooglePlus" ColumnName="IdGooglePlus" />
+          <ScalarProperty Name="FK_Rol" ColumnName="FK_Rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
